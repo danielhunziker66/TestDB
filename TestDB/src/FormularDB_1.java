@@ -59,6 +59,11 @@ public class FormularDB_1 extends JFrame {
 		contentPane.add(btnEinfuegen);
 		
 		JButton btnLesen = new JButton("lesen");
+		btnLesen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtTxtname.setText("lesen");
+			}
+		});
 		btnLesen.setBounds(311, 161, 117, 25);
 		contentPane.add(btnLesen);
 		

@@ -1,7 +1,9 @@
-import java.awt.List;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class DBConnector {
-		private List listemitNamen = new List();
+		private List<String> listemitNamen = new ArrayList<String>();
 		
 		DBConnector(){
 
@@ -11,9 +13,8 @@ public class DBConnector {
 			listemitNamen.add(name);
 		}
 		
-		public String getDaten() {
-			String name = "";
-			
-			return name;
+		public List<String> getDaten() {
+				
+			return listemitNamen;
 		}
 }

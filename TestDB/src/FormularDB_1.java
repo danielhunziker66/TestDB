@@ -8,6 +8,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JList;
 import javax.swing.JComboBox;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class FormularDB_1 extends JFrame {
 
@@ -48,6 +50,11 @@ public class FormularDB_1 extends JFrame {
 		txtTxtname.setColumns(10);
 		
 		JButton btnEinfuegen = new JButton("einfügen");
+		btnEinfuegen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtTxtname.setText("eingefügt");
+			}
+		});
 		btnEinfuegen.setBounds(162, 161, 117, 25);
 		contentPane.add(btnEinfuegen);
 		

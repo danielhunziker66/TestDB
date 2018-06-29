@@ -70,7 +70,7 @@ public class FormularDB_1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				txtTxtname.setText("lesen");
 				List listNames = meineDB.getDaten();
-
+				comboBoxNamen.removeAllItems();
 				for(int i = 0; i < listNames.size(); i++)
 				{
 					

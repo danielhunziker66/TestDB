@@ -15,6 +15,7 @@ public class FormularDB_1 extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtTxtname;
+	private JComboBox comboBoxNamen;
 
 	/**
 	 * Launch the application.
@@ -52,6 +53,7 @@ public class FormularDB_1 extends JFrame {
 		JButton btnEinfuegen = new JButton("einfügen");
 		btnEinfuegen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				comboBoxNamen.addItem(txtTxtname.getText().toString());
 				txtTxtname.setText("eingefügt");
 			}
 		});
@@ -71,7 +73,7 @@ public class FormularDB_1 extends JFrame {
 		listNamen.setBounds(387, 61, -145, 35);
 		contentPane.add(listNamen);
 		
-		JComboBox comboBoxNamen = new JComboBox();
+		comboBoxNamen = new JComboBox();
 		comboBoxNamen.setBounds(12, 27, 159, 24);
 		contentPane.add(comboBoxNamen);
 	}
